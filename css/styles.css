@@ -1,0 +1,197 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  width: 1200px;
+  height: 630px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -315px;
+  margin-left: -600px;
+
+  display: grid;
+  gap: 30px;
+  grid-template:
+    "user-1 user-1 user-2 user-3" 300px
+    "user-4 user-5 user-5 user-3" 300px
+    /1fr 1fr 1fr 1fr;
+}
+
+.default {
+  background-color: tomato;
+  border-radius: 15px;
+}
+
+.user1 {
+  background-color: hsl(263, 55%, 52%);
+  grid-area: user-1;
+  box-shadow: 10px 10px 11px 3px rgba(0, 0, 0, 0.08);
+}
+
+.user2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: user-2;
+  box-shadow: 10px 10px 11px 3px rgba(0, 0, 0, 0.08);
+}
+
+.user3 {
+  background-color: white;
+  grid-area: user-3;
+  box-shadow: 10px 10px 11px 3px rgba(0, 0, 0, 0.08);
+}
+
+.user4 {
+  background-color: white;
+  grid-area: user-4;
+  box-shadow: 10px 10px 11px 3px rgba(0, 0, 0, 0.08);
+}
+
+.user5 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: user-5;
+  box-shadow: 10px 10px 11px 3px rgba(0, 0, 0, 0.08);
+}
+
+.personal-container {
+  display: inline-flex;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.white-title {
+  color: white;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 20px;
+
+  margin: 10px 30px 0 30px;
+}
+
+.gray-title {
+  color: hsl(217, 19%, 35%);
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 20px;
+  margin: 10px 30px 0 30px;
+}
+
+.image-icon {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name1 {
+  display: inline-block;
+  margin: 0;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+
+  color: white;
+}
+
+.user-name2 {
+  display: inline-block;
+  margin: 0;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+
+  color: hsl(217, 19%, 35%);
+}
+
+.verified-text {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.text-content1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(0, 0%, 81%);
+
+  margin: 10px 30px 0 30px;
+}
+
+.text-content2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: gray;
+
+  margin: 10px 30px 0 30px;
+}
+
+.user1:hover {
+  background-color: white;
+  transition: all 0.5s ease 0s;
+}
+
+.user1:hover .text-content2 {
+  color: hsl(0, 0%, 81%);
+  transition: all 0.5s ease 0s;
+}
+
+.user1:hover p {
+  color: hsl(217, 19%, 35%);
+  transition: all 0.5s ease 0s;
+}
+
+.user2:hover {
+  background-color: hsl(219, 29%, 14%);
+  transition: all 0.5s ease 0s;
+}
+
+.user2:hover .text-content2 {
+  color: hsl(0, 0%, 81%);
+  transition: all 0.5s ease 0s;
+}
+
+.user2:hover p {
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+.user3:hover {
+  background-color: hsl(263, 55%, 52%);
+  transition: all 0.5s ease 0s;
+}
+
+.user3:hover .text-content2 {
+  color: hsl(0, 0%, 81%);
+  transition: all 0.5s ease 0s;
+}
+
+.user3:hover p {
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+.user4:hover {
+  background-color: hsl(217, 19%, 35%);
+  transition: all 0.5s ease 0s;
+}
+
+.user4:hover .text-content2 {
+  color: hsl(0, 0%, 81%);
+  transition: all 0.5s ease 0s;
+}
+
+.user4:hover p {
+  color: white;
+  transition: all 0.5s ease 0s;
+}
